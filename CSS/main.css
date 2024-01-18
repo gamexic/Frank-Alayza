@@ -1,31 +1,37 @@
 :root {
-    --morado: purple;
-    --blanco: white;
-    --negro: #1a1a1a;
-    --negro-tenue: #333;
-    --azul: blue;
+    --purple: #c501e2;
+    --white: #ffff;
+    --black: #1a1a1a;
+    --light-black: #333;
+    --blue: #01c4e7;
+    --green: #2ef8a0;
 }
 
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 a {
 	text-decoration: none;
 }
 
+section {
+    margin: 20px 0;
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;
-    color: white;
+    background-color: var(--light-black);
+    color: var(--white);
     text-align: center;
 }
 
 /* TODO NAV BAR */
 #navbar {
-    background-color: var(--negro-tenue);
-    color: var(--blanco);
+    background-color: var(--light-black);
+    color: var(--white);
     position: fixed;
     top: 20px;
     border-radius: 20px;
@@ -49,13 +55,13 @@ body {
 }
 
 #navbar li a {
-    color: var(--morado);
+    color: var(--purple);
     padding: 14px 16px;
 }
 
 #navbar li a:hover {
-    background-color: var(--blanco);
-    color: var(--negro);
+    background-color: var(--white);
+    color: var(--black);
 }
 
 /* * HAMBURGUER */
@@ -92,7 +98,7 @@ body {
     .hamburger div {
         width: 30px; /* Ancho del menú hamburguesa */
         height: 3px; /* Altura de las barras del menú hamburguesa */
-        background-color: var(--blanco);
+        background-color: var(--white);
         margin: 5px 0;
         transition: 0.4s;
     }
@@ -153,7 +159,7 @@ body {
     transform: translateX(-50%); /* Desplazar el pseudo-elemento hacia la izquierda la mitad de su ancho */
     width: 700px;
     z-index: -1; /* Por debajo del contenido del texto, pero por encima del fondo */
-    background: linear-gradient(to top, rgb(51, 168, 235) 50%, rgba(255, 255, 255, 0)) 70%; /* De blanco a transparente */
+    background: linear-gradient(to top, var(--blue) 50%, rgba(255, 255, 255, 0)) 70%; /* De blanco a transparente */
     border-bottom-left-radius: 20px; /* Suaviza la esquina inferior izquierda */
     border-bottom-right-radius: 20px; /* Suaviza la esquina inferior derecha */
     overflow: hidden;
@@ -179,18 +185,71 @@ p {
     margin-top: 10px;
 }
 
-/* Animaciones y efectos adicionales aquí */
-
-
-
 
 /* TODO MAIN */
+
+/* * AboutMe */
+
+.about-me-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.about-me-photo img {
+    max-width: 500px;
+    padding: 0px 20px;
+    border-radius: 50%; /* Optional, for a rounded photo */
+}
+
+.about-me-content {
+    max-width: 600px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-me-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-photo img {
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    /* Add more styles as per your design */
+}
+
+.read-more-btn:hover {
+    background-color: var(--green);
+    /* Change color on hover */
+}
+
+
+
 
 /* * portafolio */
 
 
 
-/* * experienciaCTO */
+/* * experiencia */
 
 
 
@@ -204,17 +263,6 @@ p {
 
 
 
-#fotoPerfil {
-    position: relative;
-    bottom: -100px;
-}
 
-@keyframes entradaFoto {
-    to { bottom: 0; }
-}
-
-section {
-    margin: 20px 0;
-}
 
 /* Estilos adicionales para botones, formularios, etc. */
