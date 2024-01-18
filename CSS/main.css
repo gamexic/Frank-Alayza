@@ -247,6 +247,78 @@ p {
 
 /* * portafolio */
 
+#portfolio {
+    background-color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-header h2 {
+    font-size: 2em;
+    color: var(--black);
+}
+
+.portfolio-header p {
+    font-size: 1em;
+    color: var(--light-black);
+}
+
+.portfolio-categories {
+    margin: 20px 0;
+}
+
+.category-btn {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.category-btn:hover {
+    background-color: var(--green);
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 10px;
+    padding: 10px;
+    width: 300px; /* Ajustar según el diseño */
+    border: 1px solid var(--light-black);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    color: var(--black);
+}
+
+.project p {
+    color: var(--light-black);
+}
+.project p:nth-child(4) {
+    margin-bottom: 12px;
+}
+
+.project a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+
 
 
 /* * experiencia */

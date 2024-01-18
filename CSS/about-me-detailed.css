@@ -1,0 +1,105 @@
+:root {
+    --purple: #c501e2;
+    --white: #ffff;
+    --black: #1a1a1a;
+    --light-black: #333;
+    --blue: #01c4e7;
+    --green: #2ef8a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+    margin: 20px 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+}
+
+/* TODO NAV BAR */
+#navbar {
+    background-color: var(--light-black);
+    color: var(--white);
+    position: fixed;
+    top: 20px;
+    border-radius: 20px;
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Desplazar a la izquierda la mitad de su ancho */
+    width: 760px;
+    z-index: 1000;
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center; /* Centrar los elementos verticalmente */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    height: 50px; /* Altura del navbar, ajusta según necesites */
+}
+
+#navbar li {
+    margin: 0 10px; /* Espaciado entre los elementos del navbar */
+}
+
+#navbar li a {
+    color: var(--purple);
+    padding: 14px 16px;
+}
+
+#navbar li a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* * HAMBURGUER */
+/* Hacer el navbar responsivo */
+@media (max-width: 768px) {
+    #navbar {
+        top: 0;
+        padding: 12px 0px;
+        width: 100%; /* Hacer que el navbar ocupe todo el ancho en pantallas pequeñas */
+        border-radius: 0; /* Opcional: eliminar el borde redondeado en pantallas pequeñas */
+    }
+
+    #navbar ul {
+        flex-direction: column; /* Cambiar la disposición de los enlaces a vertical */
+        height: auto; /* Ajustar la altura automáticamente */
+        display: none; /* Ocultar los enlaces por defecto */
+    }
+
+    #navbar.active ul {
+        display: flex; /* Mostrar los enlaces cuando el navbar esté activo */
+    }
+
+    #navbar li {
+        margin: 10px 0; /* Agregar un poco de margen entre los elementos del navbar */
+    }
+
+    .hamburger {
+        display: block; /* Mostrar el menú hamburguesa */
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    /* Estilos para el ícono del menú hamburguesa */
+    .hamburger div {
+        width: 30px; /* Ancho del menú hamburguesa */
+        height: 3px; /* Altura de las barras del menú hamburguesa */
+        background-color: var(--white);
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+}
