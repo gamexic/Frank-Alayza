@@ -485,6 +485,10 @@ p {
     text-align: center;
 }
 
+#contact .form-contact-divider {
+    margin-bottom: 12px;
+}
+
 .contact-form {
     margin: 20px 12px;
     display: flex;
