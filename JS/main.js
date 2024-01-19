@@ -26,3 +26,28 @@ function filterProjects(category) {
         }
     });
 }
+
+
+// * Certificates
+
+function filterCertificates(category) {
+    var certificates = document.querySelectorAll('.certificate-item');
+    var showMoreLink = document.getElementById('show-more-button');
+
+    certificates.forEach(cert => {
+        if (cert.dataset.category === category) {
+            cert.style.display = 'block';
+        } else {
+            cert.style.display = 'none';
+        }
+    });
+
+    // Actualizar el botón 'Show More'
+    showMoreLink.href = category + "-certificates.html"; // Ejemplo: 'web-dev-certificates.html'
+}
+
+
+
+
+
+

@@ -172,11 +172,49 @@
     </section>
 
     <section id="certificates">
-        <h2>Certificates</h2>
-        <div id="certificateGallery">
-            <!-- Images or links to certificates here -->
+        <div class="certificates-header">
+            <h2>Certifications</h2>
+            <p>Explore my certifications across various specializations.</p>
         </div>
-    </section>
+    
+        <div class="certificate-filters">
+            <button onclick="filterCertificates('all')">All</button>
+            <button onclick="filterCertificates('web-dev')">Web Development</button>
+            <button onclick="filterCertificates('data-sci')">Data Science</button>
+            <!-- Más botones de categoría según sea necesario -->
+        </div>
+    
+        <div class="certificates-list">
+            <!-- Ejemplo de certificados en Web Development -->
+            <div class="certificate-item" data-category="web-dev">
+                <img src="../IMG/Diplomas/Diploma-Curso de Inteligencia Artificial ChatGPT, DALL-E y Hugging Face.png" alt="Certificate Name">
+                <h3>Certificate Name</h3>
+                <p>Issued by: Institution Name</p>
+                <p>Date Obtained: Month Year</p>
+                <p>Brief description of the certificate.</p>
+            </div>
+            <div class="certificate-item" data-category="web-dev">
+                <img src="../IMG/Diplomas/Diploma-Curso de Inteligencia Artificial ChatGPT, DALL-E y Hugging Face.png" alt="Certificate Name">
+                <h3>Certificate Name</h3>
+                <p>Issued by: Institution Name</p>
+                <p>Date Obtained: Month Year</p>
+                <p>Brief description of the certificate.</p>
+            </div>
+            <div class="certificate-item" data-category="web-dev">
+                <img src="../IMG/Diplomas/Diploma-Curso de Inteligencia Artificial ChatGPT, DALL-E y Hugging Face.png" alt="Certificate Name">
+                <h3>Certificate Name</h3>
+                <p>Issued by: Institution Name</p>
+                <p>Date Obtained: Month Year</p>
+                <p>Brief description of the certificate.</p>
+            </div>
+            <!-- Añadir hasta 9 certificados por categoría y un botón "Ver más" después del noveno certificado -->
+
+            <!-- Botón 'Leer más' para Web Development -->
+            <a id="show-more-button" href="web-dev-certificates.html" class="show-more">Read More</a>
+
+            <!-- Repetir para otras categorías -->
+        </div>
+    </section>    
 
     <footer>
         <h2>Contact</h2>

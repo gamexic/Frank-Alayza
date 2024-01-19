@@ -5,6 +5,7 @@
     --light-black: #333;
     --blue: #01c4e7;
     --green: #2ef8a0;
+    --shadow: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -217,7 +218,7 @@ p {
     }
 
     .about-me-photo img {
-        max-width: 400px;
+       width: 80%;
         margin-bottom: 20px;
     }
 }
@@ -379,8 +380,101 @@ p {
 
 
 
-
 /* * certificados */
+
+#certificates {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 20px;
+    color: var(--black);
+}
+
+.certificates-header h2 {
+    font-size: 2em;
+}
+
+.certificates-header p {
+    font-size: 1em;
+}
+
+.certificate-filters {
+    margin-top: 8px;
+}
+
+.certificate-filters button {
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--light-black);
+    color: var(--white);
+    cursor: pointer;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.certificate-filters button:hover {
+    background-color: var(--blue);
+}
+
+.certificates-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.certificate-item {
+    margin-bottom: 20px;
+    width: 30%; /* Ajustar para 3 por fila */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.certificate-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.show-more {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.show-more:hover {
+    background-color: var(--green);
+}
+
+/* Media query para tablets */
+@media (max-width: 768px) {
+    .certificate-item {
+        width: 45%; /* Ajuste para mostrar 2 elementos por fila */
+    }
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 480px) {
+    .certificate-item {
+        width: 100%; /* Ajuste para mostrar 1 elemento por fila */
+    }
+
+    .certificate-filters button {
+        padding: 10px; /* Botones más grandes para mejor accesibilidad */
+        font-size: 1em; /* Tamaño de fuente más grande para mejor legibilidad */
+    }
+}
+
+
+
 
 
 
