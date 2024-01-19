@@ -323,6 +323,61 @@ p {
 
 /* * experiencia */
 
+#experience {
+    background-color: var(--white);
+    padding: 20px;
+    color: var(--black);
+}
+
+.experience-header h2 {
+    font-size: 2em;
+}
+
+.experience-header p {
+    font-size: 1em;
+}
+
+.experience-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    color: var(--blue);
+    font-size: 1.2em;
+}
+
+.experience-dates {
+    font-style: italic;
+    color: var(--light-black);
+}
+
+.responsibilities {
+    list-style: inside square;
+}
+
+.skills-developed {
+    font-style: italic;
+    color: var(--green);
+}
+
+.experience-img img {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    border-radius: 5px; /* Opcional para bordes redondeados */
+}
+
+/* Resto de tus estilos ... */
+
+
+
 
 
 /* * certificados */
