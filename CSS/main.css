@@ -476,14 +476,98 @@ p {
 
 
 
-
-
-
 /* TODO footer */
 
+#contact {
+    background-color: var(--light-black);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
 
+.contact-form {
+    margin: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+}
 
+.contact-form button {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
+.contact-form button:hover {
+    background-color: var(--green);
+}
 
-/* Estilos adicionales para botones, formularios, etc. */
+.direct-contact p, .social-links a {
+    margin: 10px 0;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+    color: var(--green);
+}
+
+.social-icon {
+    width: 40px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    margin: 0 5px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.social-links .social-network a img {
+    width: 60px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Media query para tablets */
+@media (min-width: 768px) {
+    #contact .form-contact-divider {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form social";
+    }
+    .form-divider {
+        grid-area: form;
+    }
+    .social-links {
+        grid-area: social;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .direct-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .social-network {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
