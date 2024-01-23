@@ -124,15 +124,29 @@ body {
 /* TODO HEADER */
 
 #hero {
-    /* Imágenes de fondo múltiples: la primera imagen es la foto, la segunda es el fondo adicional */
-    background-image: url(../IMG/Frank\ Alayza\ -\ Fondo\ Transparente\ rectangular.png), url(../IMG/3d-render-low-poly-plexus-design-network-communications.jpg);
-    background-position: center, center; /* Centra ambas imágenes */
-    background-size: auto 80%, 100% 100vh; /* Ajusta el tamaño de la foto y el fondo adicional */
-    background-repeat: no-repeat, no-repeat; /* Evita que se repitan las imágenes */
-
-    height: 100vh; /* Toma toda la altura de la pantalla */
     position: relative;
+    height: 100vh; /* Toma toda la altura de la pantalla */
+    overflow: hidden; /* Oculta cualquier parte del video que desborde */
+
+    background-image: url(../IMG/Frank\ Alayza\ -\ Fondo\ Transparente\ rectangular.png);
+    background-position: center; /* Centra imagen */
+    background-size: auto 80%; /* Ajusta el tamaño de la foto */
+    background-repeat: no-repeat;
 }
+
+#heroVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -12; /* Asegura que el video quede detrás de tu contenido */
+    object-fit: cover; /* Asegura que el video cubra el div completamente */
+}
+
 
 .hero-content {
     position: relative; /* Es importante para posicionar correctamente los pseudo-elementos */
