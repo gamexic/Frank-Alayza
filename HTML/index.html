@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="icon" href="../IMG/Logos/Gamexic-logo.png" type="image/png">
     <script src="../JS/main.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            filterCertificates('data_scientist_and_artificial_intelligence'); // Filtro inicial cuando se carga la página
+        });
+    </script>
 </head>
 <body>
     <nav id="navbar">
@@ -179,39 +184,240 @@
         </div>
     
         <div class="certificate-filters">
-            <button onclick="filterCertificates('all')">All</button>
-            <button onclick="filterCertificates('web-dev')">Web Development</button>
-            <button onclick="filterCertificates('data-sci')">Data Science</button>
+            <button onclick="filterCertificates('data_scientist_and_artificial_intelligence')">Data Scientist & AI</button>
+            <button onclick="filterCertificates('web_development')">Web Development</button>
+            <button onclick="filterCertificates('programming_and_software_development')">Programming & Software development</button>
+            <button onclick="filterCertificates('devops_and_cloud_computing')">DevOps & Cloud Computing</button>
+            <button onclick="filterCertificates('soft_skills')">Soft Skills</button>
+            <button onclick="filterCertificates('digital_marketing')">Digital Marketing</button>
+            <button onclick="filterCertificates('english')">English</button>
+            <button onclick="filterCertificates('others')">Others</button>
             <!-- Más botones de categoría según sea necesario -->
         </div>
     
         <div class="certificates-list">
+
+            <!-- * Data Scientist & AI -->
+
             <!-- Ejemplo de certificados en Web Development -->
-            <div class="certificate-item" data-category="web-dev">
-                <img src="../IMG/Diplomas/Diploma-Curso de Inteligencia Artificial ChatGPT, DALL-E y Hugging Face.png" alt="Certificate Name">
-                <h3>Certificate Name</h3>
-                <p>Issued by: Institution Name</p>
-                <p>Date Obtained: Month Year</p>
-                <p>Brief description of the certificate.</p>
+            <div class="certificate-item" data-category="data_scientist_and_artificial_intelligence">
+                <img src="../IMG/Diplomas/Data Scientist e Inteligencia Artificial/Diploma-Course of Introduction to Python.jpg" alt="Certificate Name">
+                <h3>Introduction to Python</h3>
+                <p>Issued by: DataCamp</p>
+                <p>Date Obtained: NOV, 2023</p>
             </div>
-            <div class="certificate-item" data-category="web-dev">
-                <img src="../IMG/Diplomas/Diploma-Curso de Inteligencia Artificial ChatGPT, DALL-E y Hugging Face.png" alt="Certificate Name">
-                <h3>Certificate Name</h3>
-                <p>Issued by: Institution Name</p>
-                <p>Date Obtained: Month Year</p>
-                <p>Brief description of the certificate.</p>
+            <div class="certificate-item" data-category="data_scientist_and_artificial_intelligence">
+                <img src="../IMG/Diplomas/Data Scientist e Inteligencia Artificial/Diploma-Course of Intermediate Python.jpg" alt="Certificate Name">
+                <h3>Intermediate Python</h3>
+                <p>Issued by: DataCamp</p>
+                <p>Date Obtained: DEC, 2023</p>
             </div>
-            <div class="certificate-item" data-category="web-dev">
-                <img src="../IMG/Diplomas/Diploma-Curso de Inteligencia Artificial ChatGPT, DALL-E y Hugging Face.png" alt="Certificate Name">
-                <h3>Certificate Name</h3>
-                <p>Issued by: Institution Name</p>
-                <p>Date Obtained: Month Year</p>
-                <p>Brief description of the certificate.</p>
+            <div class="certificate-item" data-category="data_scientist_and_artificial_intelligence">
+                <img src="../IMG/Diplomas/Data Scientist e Inteligencia Artificial/Diploma-Course of Data manipulation with Pandas.jpg" alt="Certificate Name">
+                <h3>Data manipulation with pandas</h3>
+                <p>Issued by: DataCamp</p>
+                <p>Date Obtained: DEC, 2023</p>
+            </div>
+            <div class="certificate-item" data-category="data_scientist_and_artificial_intelligence">
+                <img src="../IMG/Diplomas/Data Scientist e Inteligencia Artificial/Diploma-Course of Joining data with pandas.jpg" alt="Certificate Name">
+                <h3>Joining data with pandas</h3>
+                <p>Issued by: DataCamp</p>
+                <p>Date Obtained: JAN, 2024</p>
+            </div>
+            <div class="certificate-item" data-category="data_scientist_and_artificial_intelligence">
+                <img src="../IMG/Diplomas/Data Scientist e Inteligencia Artificial/Diploma-Course of statistics in Python.jpg" alt="Certificate Name">
+                <h3>Introduction to Statistics in Python</h3>
+                <p>Issued by: DataCamp</p>
+                <p>Date Obtained: JAN, 2024</p>
+            </div>
+            <div class="certificate-item" data-category="data_scientist_and_artificial_intelligence">
+                <img src="../IMG/Diplomas/Data Scientist e Inteligencia Artificial/Diploma-Course of Data Manipulation in SQL.jpg" alt="Certificate Name">
+                <h3>Data Manipulation in SQL</h3>
+                <p>Issued by: DataCamp</p>
+                <p>Date Obtained: JUL, 2023</p>
             </div>
             <!-- Añadir hasta 9 certificados por categoría y un botón "Ver más" después del noveno certificado -->
 
+            <!-- * Web Development -->
+
+            <div class="certificate-item" data-category="web_development">
+                <img src="../IMG/Diplomas/Desarrollo Web/Diploma-Curso definitivo de HTML y CSS.png" alt="Certificate Name">
+                <h3>Definitive HTML and CSS Course</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: FEB, 2022</p>
+            </div>
+            <div class="certificate-item" data-category="web_development">
+                <img src="../IMG/Diplomas/Desarrollo Web/Diploma-Curso basico de Javascript.png" alt="Certificate Name">
+                <h3>Basic JavaScript Course</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: MAR, 2022</p>
+            </div>
+            <div class="certificate-item" data-category="web_development">
+                <img src="../IMG/Diplomas/Desarrollo Web/Diploma-Curso de frontend developer.png" alt="Certificate Name">
+                <h3>Frontend Developer</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: JAN, 2022</p>
+            </div>
+            <div class="certificate-item" data-category="web_development">
+                <img src="../IMG/Diplomas/Desarrollo Web/Diploma-Curso practico de frontend developer.png" alt="Certificate Name">
+                <h3>Frontend Developer Practical Course</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: FEB, 2022</p>
+            </div>
+            <div class="certificate-item" data-category="web_development">
+                <img src="../IMG/Diplomas/Desarrollo Web/Diploma-Curso profesional de CSS Grid Layout.png" alt="Certificate Name">
+                <h3>CSS GRID Layout Professional Course</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: MAR, 2022</p>
+            </div>
+            <div class="certificate-item" data-category="web_development">
+                <img src="../IMG/Diplomas/Desarrollo Web/Diploma-Curso profesional de Git y GitHub.png" alt="Certificate Name">
+                <h3>Git and GitHub Professional Course</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: JAN, 2022</p>
+            </div>
+
+
+            <!-- * Programming & Software development -->
+
+            <div class="certificate-item" data-category="programming_and_software_development">
+                <img src="../IMG/Diplomas/Programación y Desarrollo de Software/Diploma-Curso basico de Python.png" alt="Certificate Name">
+                <h3>Basic Python Course</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: DEC, 2021</p>
+            </div>
+            <div class="certificate-item" data-category="programming_and_software_development">
+                <img src="../IMG/Diplomas/Programación y Desarrollo de Software/Diploma-Curso de computacion basica.png" alt="Certificate Name">
+                <h3>Basic Computing</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: MAR, 2022</p>
+            </div>
+            <div class="certificate-item" data-category="programming_and_software_development">
+                <img src="../IMG/Diplomas/Programación y Desarrollo de Software/Diploma-Curso de pensamiento computacional con python.png" alt="Certificate Name">
+                <h3>Introduction to Computational Thinking with Python</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: DEC, 2021</p>
+            </div>
+            <div class="certificate-item" data-category="programming_and_software_development">
+                <img src="../IMG/Diplomas/Programación y Desarrollo de Software/Diploma-Curso intermedio de comprenhensions, lambdas y manejo de errores.png" alt="Certificate Name">
+                <h3>Intermediate Python Course: Comprehensions, Lambdas and Error Handling</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: JAN, 2022</p>
+            </div>
+
+
+            <!-- * DevOps & Cloud Computing -->
+
+            <div class="certificate-item" data-category="devops_and_cloud_computing">
+                <img src="../IMG/Diplomas/DevOps y Cloud Computing/Diploma-Curso de introduccion a Google Cloud Platform.png" alt="Certificate Name">
+                <h3>Introduction to Google Cloud Platform</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: SEP, 2023</p>
+            </div>
+            <div class="certificate-item" data-category="devops_and_cloud_computing">
+                <img src="../IMG/Diplomas/DevOps y Cloud Computing/Diploma-Curso de almacenamiento en la nube con Google Cloud Platform.png" alt="Certificate Name">
+                <h3>Cloud storage with Google Cloud Platform</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: SEP, 2023</p>
+            </div>
+            <div class="certificate-item" data-category="devops_and_cloud_computing">
+                <img src="../IMG/Diplomas/DevOps y Cloud Computing/Diploma-Curso de Big Data y Machine Learning con Google Cloud Platform.png" alt="Certificate Name">
+                <h3>Big Data and Machine Learning with Google Cloud Platform</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: SEP, 2023</p>
+            </div>
+
+
+            <!-- * Soft Skills -->
+
+            <div class="certificate-item" data-category="soft_skills">
+                <img src="../IMG/Diplomas/Habilidades blandas/Diploma-Curso de gestion de equipos agiles.png" alt="Certificate Name">
+                <h3>Agile Team Management</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: JUL, 2023</p>
+            </div>
+            <div class="certificate-item" data-category="soft_skills">
+                <img src="../IMG/Diplomas/Habilidades blandas/Diploma-Curso de manejo de emociones para la productividad y la organizacion.png" alt="Certificate Name">
+                <h3>Managing Emotions for Productivity and Organization</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: JUL, 2023</p>
+            </div>
+
+
+            <!-- * Digital Marketing -->
+
+            <div class="certificate-item" data-category="digital_marketing">
+                <img src="../IMG/Diplomas/Marketing Digital/Diploma-Curso de Inteligencia Artificial para marketing y contenidos.png" alt="Certificate Name">
+                <h3>Artificial Intelligence for Marketing and Content</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: AUG, 2023</p>
+            </div>
+            <div class="certificate-item" data-category="digital_marketing">
+                <img src="../IMG/Diplomas/Marketing Digital/Diploma-Curso para empezar a vender por internet.png" alt="Certificate Name">
+                <h3>Course to Start Selling Online</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: AUG, 2023</p>
+            </div>
+            <div class="certificate-item" data-category="digital_marketing">
+                <img src="../IMG/Diplomas/Marketing Digital/Diploma-Taller de creacion de contenido con IA.png" alt="Certificate Name">
+                <h3>Content Creation Workshop with AI</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: AUG, 2023</p>
+            </div>
+
+
+            <!-- * English -->
+
+            <div class="certificate-item" data-category="english">
+                <img src="../IMG/Diplomas/Inglés/Diploma-ICPNA avanzado.jpg" alt="Certificate Name">
+                <h3>ICPNA Advanced Program of English</h3>
+                <p>Issued by: ICPNA</p>
+                <p>Date Obtained: NOV, 2022</p>
+            </div>
+            <div class="certificate-item" data-category="english">
+                <img src="../IMG/Diplomas/Inglés/Diploma-English Course for beginners.png" alt="Certificate Name">
+                <h3>English Course for Beginners</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: DEC, 2021</p>
+            </div>
+            <div class="certificate-item" data-category="english">
+                <img src="../IMG/Diplomas/Inglés/Diploma-Basic English course Fundamentals.png" alt="Certificate Name">
+                <h3>Basic English Course: Fundamentals</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: DIC, 2021</p>
+            </div>
+            <div class="certificate-item" data-category="english">
+                <img src="../IMG/Diplomas/Inglés/Diploma-Workshop for Practicing english with ChatGPT.png" alt="Certificate Name">
+                <h3>Workshop for Practicing english with ChatGPT</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: JUL, 2023</p>
+            </div>
+
+
+            <!-- * Others -->
+
+            <div class="certificate-item" data-category="others">
+                <img src="../IMG/Diplomas/Otros/Diploma-Curso de estrategias para aprender en linea efectivamente.png" alt="Certificate Name">
+                <h3>Strategies to Learn Effectively Online</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: JUN, 2023</p>
+            </div>
+            <div class="certificate-item" data-category="others">
+                <img src="../IMG/Diplomas/Otros/Diploma-Curso de gestion efectiva del tiempo.png" alt="Certificate Name">
+                <h3>Effective Time Management</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: JUN, 2023</p>
+            </div>
+            <div class="certificate-item" data-category="others">
+                <img src="../IMG/Diplomas/Otros/Diploma-Curso de Notion Productividad y organizacion para estudiantes.png" alt="Certificate Name">
+                <h3>Notion: Productivity and Organization for Students</h3>
+                <p>Issued by: Platzi</p>
+                <p>Date Obtained: JUN, 2023</p>
+            </div>
+
+
             <!-- Botón 'Leer más' para Web Development -->
-            <a id="show-more-button" href="web-dev-certificates.html" class="show-more">Read More</a>
+            <a id="show-more-button" href="./Certifications/data_scientist_and_artificial_intelligence-certificates.html" class="show-more">See More</a>
 
             <!-- Repetir para otras categorías -->
         </div>
@@ -266,7 +472,7 @@
                 </div>
             </div>
         </div>
-        © <script>document.write(new Date().getFullYear());</script> Frank Alayza. Todos los derechos reservados. / All rights reserved.
+        © <script>document.write(new Date().getFullYear());</script> Frank Alayza. All rights reserved.
     </footer>
 </body>
 </html>

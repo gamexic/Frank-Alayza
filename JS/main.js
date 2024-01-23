@@ -45,11 +45,5 @@ function filterCertificates(category) {
     });
 
     // Actualizar el botón 'Show More'
-    showMoreLink.href = category + "-certificates.html"; // Ejemplo: 'web-dev-certificates.html'
+    showMoreLink.href = "./Certifications/" + category + "-certificates.html"; // Ejemplo: 'web-dev-certificates.html'
 }
-
-
-
-
-
-

@@ -382,6 +382,12 @@ p {
 
 /* * certificados */
 
+/* TODO main */
+
+main #web-development-certificates {
+    margin-top: 100px;
+}
+
 #certificates {
     display: flex;
     flex-direction: column;

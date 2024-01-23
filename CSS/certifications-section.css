@@ -1,0 +1,63 @@
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px; /* Añade un espacio entre los elementos */
+}
+
+.certificate-item {
+    width: calc(33% - 20px); /* Tres elementos por fila con espacio */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra sutil para profundidad */
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--white); /* Fondo claro para contraste */
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+.certificate-item:hover {
+    transform: translateY(-5px); /* Efecto 'levitar' al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.certificate-item img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: auto; /* Mantener la proporción */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px;
+}
+
+.certificate-item h3 {
+    color: var(--blue); /* Color para el título del certificado */
+    margin: 10px 0;
+}
+
+.certificate-item p {
+    font-size: 0.9em; /* Tamaño de fuente ligeramente más pequeño */
+    color: var(--light-black); /* Color para el texto */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .certificate-item {
+        width: calc(50% - 20px); /* Dos elementos por fila en tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-item {
+        width: 100%; /* Un elemento por fila en móvil */
+    }
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Coloca el video detrás del contenido */
+  }
+  
