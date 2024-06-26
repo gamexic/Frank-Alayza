@@ -1,23 +1,71 @@
+/* Creamos las variables de los colores */
+:root {
+    --negro: #000000;
+    --negro-carbon: #333333;
+    --azul: #007BFF;
+    --morado-oscuro: #4B0082;
+    --morado-chillon: #8A2BE2;
+    --blanco: #FFFFFF;
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #333333; /* Negro Carbón */
-    color: #FFFFFF; /* Blanco */
+    background-color: var(--negro-carbon);
+    color: var(--blanco);
     margin: 0;
     padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #007BFF; /* Azul */
+    color: var(--azul);
 }
 
 a {
-    color: #8A2BE2; /* Morado Chillón */
+    color: var(--morado-chillon);
 }
 
 .btn {
-    background-color: #007BFF; /* Azul */
-    color: #FFFFFF; /* Blanco */
+    background-color: var(--azul);
+    color: var(--blanco);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+/* * Estilisamos el Home */
+.home {
+    background-image: url("../img/black-background.jpg");
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover; /* Ajustar tamaño de la imagen para cubrir toda la sección */
+    background-position: center;
+    padding: 20px 0;
+    text-align: center;
+    height: 100vh;
+}
+.home img {
+    width: 80%;
+    max-width: 700px;
+}
+.home .tagline {
+    color: var(--morado-chillon);
+}
+.home .cta-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Permite que los botones se muevan a la siguiente línea si no caben */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Espacio entre botones */
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
 }
