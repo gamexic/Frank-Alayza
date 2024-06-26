@@ -48,7 +48,7 @@ a {
     position: relative;
     background-size: cover; /* Ajustar tamaño de la imagen para cubrir toda la sección */
     background-position: center;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
     height: 100vh;
 }
@@ -65,7 +65,30 @@ a {
     flex-wrap: wrap; /* Permite que los botones se muevan a la siguiente línea si no caben */
     justify-content: center; /* Centra los botones horizontalmente */
     gap: 10px; /* Espacio entre botones */
-    margin-top: 20px;
     align-items: center;
     text-align: center;
+}
+
+
+
+/* * Estilisamos la sección de About me */
+.about_me{
+    background-color: var(--morado-oscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+.about_me .intro-text {
+    max-width: 700px;
+}
+.about_me .bio {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+.about_me .bio img {
+    width: 100%;
 }
