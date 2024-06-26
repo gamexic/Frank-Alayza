@@ -1,0 +1,23 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333333; /* Negro Carbón */
+    color: #FFFFFF; /* Blanco */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #007BFF; /* Azul */
+}
+
+a {
+    color: #8A2BE2; /* Morado Chillón */
+}
+
+.btn {
+    background-color: #007BFF; /* Azul */
+    color: #FFFFFF; /* Blanco */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
