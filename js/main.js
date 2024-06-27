@@ -1,4 +1,3 @@
-
 // Función para que incluya el contenido de un archivo HTML en otro
 function includeHTML() {
     var elements = document.getElementsByTagName('*');
@@ -30,3 +29,6 @@ function includeHTML() {
 document.addEventListener('DOMContentLoaded', function () {
     includeHTML();
 });
+
+
+

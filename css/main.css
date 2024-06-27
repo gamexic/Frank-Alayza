@@ -37,6 +37,79 @@ a {
 
 
 
+/* * Estilizamos el header */
+header {
+    background: var(--morado-oscuro);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; /* Posición en la parte superior */
+    left: 0; /* Posición a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegurar que el header esté por encima de otros elementos */
+}
+header .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li a {
+    display: inline-block;
+    color: var(--blanco);
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+    text-decoration: none;
+}
+header nav ul li a:hover {
+    border-bottom-color: dodgerblue;
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+    padding-right: 20px;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000;
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -150%;
+        top: 70px;
+        width: 100%;
+        background: var(--morado-oscuro);
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+}
+
+
+
 /* * Estilisamos el Home */
 .home {
     background-image: url("../img/black-background.jpg");
