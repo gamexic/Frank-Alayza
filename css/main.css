@@ -34,6 +34,9 @@ a {
     display: inline-block;
     text-align: center;
 }
+.btn:hover {
+    background-color: var(--morado-oscuro);
+}
 
 
 
@@ -220,6 +223,10 @@ header nav ul li a:hover {
             transform: translateY(-10px);
         }
 
+        &:hover a {
+            background-color: var(--morado-oscuro);
+        }
+
         img {
             width: 100%;
             height: 200px;
@@ -296,6 +303,10 @@ header nav ul li a:hover {
 
         &:hover {
             transform: translateY(-10px);
+        }
+
+        &:hover a {
+            background-color: var(--morado-oscuro);
         }
 
         img {
@@ -469,7 +480,7 @@ header nav ul li a:hover {
                 text-align: center;
 
                 &:hover {
-                    background-color: #0056b3; /* Azul oscuro */
+                    background-color: var(--morado-oscuro); /* Azul oscuro */
                 }
             }
         }
