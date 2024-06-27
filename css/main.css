@@ -96,7 +96,7 @@ a {
 
 /* * Estilisamos la sección de Projects */
 .projects {
-    padding: 50px 20px;
+    padding: 35px 20px 0 20px;
     text-align: center;
     background: url('../images/projects-background.jpg') no-repeat center center;
     background-size: cover;
@@ -179,7 +179,7 @@ a {
 
 /* * Estilizamos la seccion del blog */
 .blog {
-    padding: 0px 20px;
+    padding: 35px 20px 0 20px;
     text-align: center;
     background: url('../images/blog-background.jpg') no-repeat center center;
     background-size: cover;
