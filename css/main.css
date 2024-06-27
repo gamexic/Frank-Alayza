@@ -91,3 +91,86 @@ a {
 .about_me .bio img {
     width: 100%;
 }
+
+
+
+/* * Estilisamos la sección de Projects */
+.projects {
+    padding: 50px 20px;
+    text-align: center;
+    background: url('../images/projects-background.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .content {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    h1 {
+        color: var(--azul); /* Azul */
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        margin-top: 24px;
+    }
+
+    .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        max-width: 1350px;
+    }
+
+    .project-card {
+        background: var(--negro-carbon); /* Negro Carbón */
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 300px;
+        text-align: left;
+        color: var(--blanco); /* Blanco */
+        box-shadow: 0 4px 8px rgba(95, 0, 204, 0.616);
+        transition: transform 0.3s;
+        text-align: center;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        h3 {
+            margin: 20px 15px 10px 15px;
+            color: var(--morado-chillon); /* Morado Chillón */
+        }
+
+        p {
+            margin: 0 15px 20px 15px;
+        }
+
+        .btn {
+            display: block;
+            background-color: var(--azul); /* Azul */
+            color: var(--blanco); /* Blanco */
+            text-align: center;
+            padding: 10px 0;
+            margin: 0 15px 20px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    }
+}
