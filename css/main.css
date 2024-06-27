@@ -8,6 +8,10 @@
     --blanco: #FFFFFF;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--negro-carbon);
