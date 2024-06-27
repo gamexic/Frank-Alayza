@@ -301,6 +301,7 @@ header nav ul li a:hover {
         gap: 20px;
         justify-content: center;
         max-width: 1350px;
+        margin-bottom: 20px;
     }
 
     .blog-card {
