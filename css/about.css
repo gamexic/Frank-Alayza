@@ -1,0 +1,39 @@
+.about_me {
+    margin-top: 80px;
+    background-color: var(--negro-carbon);
+}
+
+.interests {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.interests .interests-info_container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.interests .interests-info_container .interest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 590px;
+}
+.interests .interests-info_container .interest .interest-info-img_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+}
+.interests .interests-info_container .interest .interest-info-img_container img {
+    width: 100%;
+}
