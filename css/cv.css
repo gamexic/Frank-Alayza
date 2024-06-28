@@ -73,7 +73,7 @@
     max-width: 1380px;
 }
 .cv .section_certificaciones .section_certificaciones-item_container .item {
-    max-width: 450px;
+    max-width: 440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,4 +82,5 @@
 }
 .cv .section_certificaciones .section_certificaciones-item_container .item img {
     width: 80%;
+    border-radius: 15px;
 }
