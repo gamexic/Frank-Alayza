@@ -5,10 +5,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 120px;
 }
-.cv h1 {
+/* .cv h1 {
     color: var(--morado-chillon);
-}
+} */
 .cv .section_experiencia_profesional {
     display: flex;
     flex-direction: column;
@@ -44,7 +45,15 @@
     text-align: start;
     row-gap: 10px;
     column-gap: 60px;
-    padding-left: 20px;
+    padding-left: 40px;
+}
+@media only screen and (min-width: 700px) {
+    .cv .section_habilidades ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 80px;
+        padding-left: 60px;
+    }
+
 }
 
 .cv .section_certificaciones {

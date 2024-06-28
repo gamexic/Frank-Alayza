@@ -190,7 +190,7 @@ header nav ul li a:hover {
 .projects {
     padding: 35px 20px 0 20px;
     text-align: center;
-    background: url('../images/projects-background.jpg') no-repeat center center;
+    /* background: url('../images/projects-background.jpg') no-repeat center center; */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -424,7 +424,7 @@ header nav ul li a:hover {
 .contact {
     padding: 35px 20px 0 20px;
     text-align: center;
-    background: url('../images/contact-background.jpg') no-repeat center center;
+    /* background: url('../images/contact-background.jpg') no-repeat center center; */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -616,7 +616,7 @@ footer {
 .achievements {
     padding: 50px 20px;
     text-align: center;
-    background: url('../images/achievements-background.jpg') no-repeat center center;
+    /* background: url('../images/achievements-background.jpg') no-repeat center center; */
     background-size: cover;
 
     .content {
