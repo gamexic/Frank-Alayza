@@ -168,6 +168,7 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
+    margin-bottom: 20px;
 }
 .about_me .bio img {
     width: 100%;
@@ -178,7 +179,6 @@ header nav ul li a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
-        margin-bottom: 20px;
         justify-content: center;
         align-items: center;
     }
