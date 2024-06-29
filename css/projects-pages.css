@@ -20,6 +20,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 1500px;
+}
+.projects-page .project_page-container .project_page-img_container img {
+    width: 30%;
+    border-radius: 15px;
 }
 .projects-page .project_page-container .project_page-info_container {
     display: flex;
